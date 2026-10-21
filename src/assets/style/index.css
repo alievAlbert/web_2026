@@ -6,11 +6,17 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
+    min-height: 100%;
     flex-direction: column;
     background-color: #F4F5F8;
     color: #1D1D1F;
+    margin: 0;
 }
 
 header {
@@ -77,6 +83,7 @@ header h4 {
 
 main {
     display: flex;
+    flex: 1 0 auto;
     padding-top: 150px;
     padding-bottom: 80px;
     background-image: url('../img/background-phones.svg'); 
@@ -183,6 +190,8 @@ footer {
     background-color: #111111;
     color: #FFFFFF;
     padding: 50px 0 25px;
+    margin-top: auto;
+    width: 100%;
 }
 
 .footer-container {
