@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F5F8;
+    color: #1D1D1F;
+}
+
+header {
+    position: fixed;
+    margin: 25px 50% 0 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+}
+
+header h4 {
+    color: #2563EB;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.navigation {
+    display: flex;
+    gap: 28px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #1D1D1F;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #2563EB;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #2563EB;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contacts img {
+    width: 18px;
+    height: 18px;
+}
+
+main {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background-image: url('../img/background-phones.svg'); 
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+}
+
+.description-section {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.description-text {
+    width: 650px;
+}
+
+.description-text h3 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1D1D1F;
+}
+
+.description-text h3 span {
+    color: #2563EB;
+}
+
+.description-text p {
+    font-size: 15px;
+    color: #4B5563;
+    width: 520px;
+}
+
+.get-contacts {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 30px;
+    width: 620px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.get-contacts h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.get-contacts-form form {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 12px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: 1px solid #D1D5DB;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #1D1D1F;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-bottom-color: #2563EB;
+}
+
+.input-group input::placeholder {
+    color: #1d1d1f2b;
+}
+
+.get-contacts-form button {
+    background: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+}
+
+.get-contacts-form button:hover {
+    background: #1D4ED8;
+}
+
+footer {
+    background-color: #111111;
+    color: #FFFFFF;
+    padding: 50px 0 25px;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+footer h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 25px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contact span {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #9CA3AF;
+}
+
+.footer-contact span img{
+    width: 18px;
+    height: 18px;
+}
+
+.footer-contact a, 
+.footer-contact address {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-note {
+    font-size: 12px;
+    color: #6B7280;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.footer-note img {
+    width: 25px;
+    height: 25px;
+}
