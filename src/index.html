@@ -1,40 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>lab04</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT WEBSITE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/index.css">
 </head>
 <body>
-    <header>
-        <h4>IT WEBSITE</h4>
-        <nav class="navigation">
-            <a href="#">Services</a>
-            <a href="#">Media</a>
-            <a href="#">Cases</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contacts</a>
-        </nav>
-        <div class="contacts">
-            <div class="contact-group">
-                <img src="assets/img/phone.svg" alt="mobile">
-                <a href="tel:+71111111111">+7 (111) 111 11 11</a>
-                <a href="tel:+71111111111">+7 (111) 111 11 11</a>
+    <div class="page-background">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <header class="header-mobile">
+            <label for="menu-toggle" class="burger-btn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="company-logo">
+                <span>IT WEBSITE</span>
             </div>
-            <div class="contact-group">
-                <img src="assets/img/mail.svg" alt="email">
-                <a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
+            <div class="mobile-header-contact">
+                <a href="mailto:itcompany@mail.com">
+                    <img src="assets/img/email.png" alt="Email">
+                </a>
+            </div>
+        </header>
+        <div class="mobile-menu" id="mobileMenu">
+            <label for="menu-toggle" class="close-btn" aria-label="Close menu">&times;</label>
+            <div class="mobile-menu-logo">
+                <span>IT WEBSITE</span>
+            </div>
+            <nav class="mobile-nav-links">
+                <a href="#services" class="mob-link">Services</a>
+                <a href="#media" class="mob-link">Media</a>
+                <a href="#cases" class="mob-link">Cases</a>
+                <a href="#faq" class="mob-link">FAQ</a>
+                <a href="#contacts" class="mob-link">Contacts</a>
+            </nav>
+            <div class="mobile-menu-contacts">
+                <div class="contact-group">
+                    <a href="tel:+71111111111" class="contact-link">
+                        <img src="assets/img/phone.png" alt="phone"> +7 (111) 111 11 11
+                    </a>
+                    <a href="tel:+71111111111" class="contact-link">
+                        <img src="assets/img/phone.png" alt="phone"> +7 (111) 111 11 11
+                    </a>
+                </div>
+                <div class="contact-group">
+                    <a href="mailto:itcompany@mail.com" class="contact-link">
+                        <img src="assets/img/email.png" alt="email"> itcompany@mail.com
+                    </a>
+                </div>
             </div>
         </div>
-    </header>
+        <header class="header-pc">
+            <h4 class="logo">IT WEBSITE</h4>
+            <nav class="navigation">
+                <a href="#services">Services</a>
+                <a href="#media">Media</a>
+                <a href="#cases">Cases</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+            <div class="contacts">
+                <div class="contact-group phone-group">
+                    <img src="assets/img/phone.png" alt="phone">
+                    <a href="tel:+71111111111">+7 (111) 111 11 11</a>
+                    <a href="tel:+71111111111">+7 (111) 111 11 11</a>
+                </div>
+                <div class="contact-group mail-group">
+                    <img src="assets/img/email.png" alt="email">
+                    <a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
+                </div>
+            </div>
+        </header>
+        <div class="hero-bg-animation" aria-hidden="true">
+            <div class="hero-column hero-column--up">
+                <div class="hero-column__track">
+                    <img src="assets/img/column-left.webp" alt="">
+                    <img src="assets/img/column-left.webp" alt="">
+                </div>
+            </div>
+            <div class="hero-column hero-column--down">
+                <div class="hero-column__track">
+                    <img src="assets/img/column-right.webp" alt="">
+                    <img src="assets/img/column-right.webp" alt="">
+                </div>
+            </div>
+        </div>
 
-    <main>
-        <section class="description-section">
+        <main class="hero-main">
             <div class="description-text">
-                <h3>
+                <h1>
                     Development of <span>mobile<br>applications</span> and <span>web services</span> of<br>any complexity
-                </h3>
+                </h1>
                 <p>
                     We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices
                 </p>
@@ -57,27 +116,52 @@
                     </form>
                 </div>
             </div>
-        </section>
-    </main>
-
+        </main>
+    </div>
+    <section class="technologies-section">
+        <div class="text-technologies">
+            <h3>Full development cycle</h3>
+            <p class="tech-subtitle">We use proven technologies</p>
+            <div class="tech-group">
+                <h4>Web</h4>
+                <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js / Nuxt / MySQL / Laravel / GO lang / django / Python</p>
+            </div>
+            <div class="tech-group">
+                <h4>Mobile</h4>
+                <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>
+            </div>
+        </div>
+        <div class="list-technologies">
+            <ul>
+                <li><a href="#">iOS development</a></li>
+                <li><a href="#">Android development</a></li>
+                <li><a href="#">Web development</a></li>
+                <li><a href="#">UI/UX design</a></li>
+                <li><a href="#">Testing</a></li>
+                <li><a href="#">Launch</a></li>
+                <li><a href="#">IT consulting</a></li>
+            </ul>
+        </div>
+    </section>
     <footer>
         <div class="footer-container">
             <h2>IT WEBSITE</h2>
+            <div class="first-column"></div>
             <div class="footer-contacts">
                 <div class="footer-contact">
-                    <span><img src="assets/img/phone_black.svg" alt="mobile-black">Contact nums</span>
+                    <span><img src="assets/img/phone_black.svg" alt="phone">Contact nums</span>
                     <a href="tel:+77883959026">+7 (788) 395 90 26</a>
                 </div>
                 <div class="footer-contact">
-                    <span><img src="assets/img/mail_black.svg" alt="mail-black">Post</span>
+                    <span><img src="assets/img/mail_black.svg" alt="mail">Post</span>
                     <a href="mailto:mail@mail.com">mail@mail.com</a>
                 </div>
                 <div class="footer-contact">
-                    <span><img src="assets/img/place.svg" alt="place">Adress</span>
+                    <span><img src="assets/img/place.svg" alt="place">Address</span>
                     <address>City city, street st. 90</address>
                 </div>
                 <div class="footer-contact">
-                    <span><img src="assets/img/document.svg" alt="document">Leave a request</span>
+                    <span><img src="assets/img/document.svg" alt="doc">Leave a request</span>
                     <a href="#">Leave a request</a>
                 </div>
             </div>
